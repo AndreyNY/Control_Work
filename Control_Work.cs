@@ -12,7 +12,7 @@ Console.WriteLine();
 Console.WriteLine("массив введенных данных:");
 Console.WriteLine($"{PrintArray(ArrayStrings)}");
 Console.WriteLine();
-int length = 3;  // задаем парметр длины элемент массива, который согласно заданию озвучен
+int length = 3;
 int CheckArray(string[] array, int length)
 {
     int result = 0;
@@ -23,7 +23,7 @@ int CheckArray(string[] array, int length)
     return result;
 }
 int numbers = CheckArray(ArrayStrings, length); 
-string[] newArrayStrings = new string[numbers]; // создаем новый массив
+string[] newArrayStrings = new string[numbers];
 NewArray(ArrayStrings, newArrayStrings, length);
 void NewArray(string[] oldArray, string[] newArray, int lengthLimit)
 {
@@ -49,5 +49,5 @@ string PrintArray(string[] array)
     result += " ]";
     return result;
 }
-Console.WriteLine("элементы массива  длина которых меньше либо равна 3 символаv:");
+Console.WriteLine("элементы массива  длина которых меньше либо равна 3 символа:");
 Console.WriteLine($"{PrintArray(newArrayStrings)}");
